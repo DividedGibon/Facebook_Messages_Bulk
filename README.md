@@ -1,35 +1,19 @@
 # Facebook Messages Bulk Changes
 
-Unfortunately, a function is not included in Facebook to allow chats/messages in the Messenger environment to be bulk edited – I.e. Archived, Deleted or unarchived.
-There also exists some code here from Tedmiston’s, which was design to archive chats.  I’ve improved this code, then noticed others requesting code which could not just archive, but also unarchive and delete in bulk.
+This repository contains code to bulk edit Facebook Messenger chats/messages by archiving, unarchiving, or deleting them. Unfortunately, Facebook does not provide a built-in function for bulk editing of chats, hence this code works at the browser level to manipulate the browser console.
 
-This repo contains code which will allow either of the three functions to be run in bulk. 
+## Usage
 
-Some notes: 
-1.	You need to do this via a desktop web browser which has a developer options.  I recommend Google Chrome (only due to me testing it here).
-2.	The code is efficient, but if you have hundreds of chat you may need to leave the browser (take a break, put your feet up and have a coffee). 
-3.	I’ve tested this as of May ’23 – I cannot guarantee that a change in Facebooks Messenger web build won’t mean this code stops working.
+1. **Open [Facebook Messenger](https://www.facebook.com/messages/) in a desktop web browser with developer options enabled**. Google Chrome is recommended (tested as of May '23).
+2. **Navigate to the chat folder you want to bulk edit** (main chats, marketplace, or already archived chats).
+3. **Open the Chrome "three dots menu" located at the top-right next to your profile picture** and click "More Tools" -> "Developer Tools". Alternatively, use the keyboard shortcut "CTRL+SHIFT+I". This will open the developer web tools, which should split the web interface window and open on the right-hand of the screen (or in a separate window).
+4. **In the developer interface, click on "Console" at the top (next to "Elements")**.
+5. **Choose one of the following code files: `Archive.js`, `Unarchive.js`, or `Delete.js`**.
+6. **Paste the contents of the chosen file into the console and hit Enter**.
+7. **You'll get a browser-level prompt to confirm you want the code to run**. Finally, leave it to do its thing. If you have hundreds of chats, it may take some time to complete.
 
-Please ensure you understand the following: 
-•	This code works at the browser level as Facebook offers no easy way to alter/edit chats in bulk. 
-•	This code is manipulating the browser console.
-•	Code has only been tested in Google Chrome but may work in others. I just don’t have time to test them all. 
+## Notes
 
-Quick Start
-Step 1: Load Facebook messenger in a new tab (or new window).
-Step 2: Navigate to the chat folder you want to bulk edit.  I.e., the main chats, marketplace or already archived chats.
-Step 3: (note this step applies to Chrome only – other browsers may vary).
-•	Open the “three dots menu” of Chrome, located in the top-right next to your profile picture. 
-•	Click “More Tools”
-•	Click “Developer Tools”
-Alternatively use the keyboard shortcut “CTRL+SHIFT+I”
-*Note: This will open the developer web tools – it should split the web interface window and open on the right-hand of the screen (or in a separate window). 
-Step 4: In the developer interface click on “Console” at the top (next to “Elements”).
-Next, we can use the one of the following code files: 
-`Archive.js`
-`Unarchive.js`
-`Delete.js`
-
-Step 5: Paste the contents of the file into the console and hit Enter.
-Step 6: You’ll then get a browser level prompt confirm you want the code to run. 
-Finally, leave it to do its thing, you’ll need to leave the browser open – have a coffee.
+- This code has only been tested in Google Chrome but may work in other browsers.
+- This code is efficient, but if you have hundreds of chats, you may need to take a break and leave the browser open to finish the task.
+- Facebook Messenger's web build may change at any time, which may cause this code to stop working.
