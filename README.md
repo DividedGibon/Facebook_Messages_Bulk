@@ -4,7 +4,7 @@ This repository contains code to bulk edit Facebook Messenger chats/messages by 
 
 ## Usage
 
-1. **Open [Facebook Messenger](https://www.facebook.com/messages/) in a desktop web browser with developer options enabled**. Google Chrome is recommended (tested as of May '23).
+1. **Open [Facebook Messenger](https://www.facebook.com/messages/) in a desktop web browser**. Google Chrome is recommended (tested as of May '23).
 2. **Navigate to the chat folder you want to bulk edit** (main chats, marketplace, or already archived chats).
 3. **Open the Chrome "three dots menu" located at the top-right next to your profile picture** and click "More Tools" -> "Developer Tools". Alternatively, use the keyboard shortcut "CTRL+SHIFT+I". This will open the developer web tools, which should split the web interface window and open on the right-hand of the screen (or in a separate window).
 4. **In the developer interface, click on "Console" at the top (next to "Elements")**.
