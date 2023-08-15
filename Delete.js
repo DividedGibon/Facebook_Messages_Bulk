@@ -7,7 +7,7 @@ if (confirmation) {
     let a = all[1];
     a.click();
     let menuitems = document.querySelectorAll('div[role=menuitem]');
-    let archiveChatRegex = /Delete chat/;
+    let archiveChatRegex = /Delete Chat/;
     for (let i = 0; i < menuitems.length; i++) {
       if (archiveChatRegex.test(menuitems[i].innerText)) {
         menuitems[i].click();
